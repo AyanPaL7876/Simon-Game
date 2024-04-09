@@ -1,0 +1,151 @@
+*{
+    border: border-box;
+    text-align: center;
+    margin: 0%;
+}
+:root{
+    --red : rgb(232, 98, 98);
+    --yellow : rgb(250, 201, 3);
+    --blue : rgb(88, 88, 219);
+    --purple : rgb(235, 103, 235);
+    --flash : rgb(255, 255, 255);
+    --boder : black;
+    --heading : wheat;
+}
+body{
+    background-color: blanchedalmond;
+
+}
+/* nav */
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--boder) ;
+    color: var(--heading);
+    width: 100vw;
+    height: 50px;
+    font-size: larger;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* body  */
+h2{
+    margin-top: 1rem;
+    height: 75px;
+}
+
+.contaner{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#a{
+    display: flex;
+    margin: 1rem 0rem 0px 0rem;
+}
+#b{
+    display: flex;
+    margin: 0px 0rem 1px 0rem;
+}
+
+.red,.yellow,.blue,.purple{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 3rem;
+    border: 1px solid var(--boder);
+    cursor: pointer;
+}
+
+.red{
+    background-color: var(--red);
+}
+.red:hover{
+    box-shadow: 2px 2px 20px var(--red);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+.yellow:hover{
+    box-shadow: -2px -2px 20px var(--yellow);
+}
+.blue{
+    background-color: var(--blue);
+}
+.blue:hover{
+    box-shadow: -2px -2px 20px var(--blue);
+}
+.purple{
+    background-color: var(--purple);
+}
+.purple:hover{
+    box-shadow: 2px -2px 20px var(--purple);
+}
+
+.flash{
+    background-color: var(--flash);
+}
+
+.hightScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.hightScore div{
+    border-radius: 10px ;
+    border: 1px solid var(--boder);
+    height: 2.5rem;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    padding: 0px 2rem
+}
+
+#viewHightSchore{
+    width: auto;
+    font-size: larger;
+    border: none;
+    margin-top: 5px;
+}
+
+#start-quit{
+    margin-right: 4rem;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    background-color: rgb(56, 204, 56);
+    margin-top: 10px;
+}
+#start-quit:hover{
+    box-shadow: 3px 3px 10px var(--boder);
+}
+
+@media screen and (max-width:400px){
+    #a,#b{
+        margin: 0px;
+    }
+    .red,.yellow,.blue,.purple{
+        width: 150px;
+        height: 150px;
+        margin: 0.5rem;
+        border-radius: 40px;
+    }
+    .hightScore {
+        width: 100vw;
+    }
+    #start-quit{
+        margin-right: 2rem;
+    }
+}
